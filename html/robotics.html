@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Brian Hou - Robotics</title>
+    <link rel="stylesheet" href="../css/robotics.css">
+
+    <!--Font------------------------->
+    <!--
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/Playfair+Display?query=playf" rel="stylesheet">
+    -->
+
+    <!--first image rotating class-------------->
+    <style>
+        .hi-slide {
+            position: relative;
+            width: 754px;
+            height: 300px;
+            margin: 50px auto 0;
+        }
+
+        .hi-slide .hi-next,
+        .hi-slide .hi-prev {
+            position: absolute;
+            top: 50%;
+            width: 40px;
+            height: 80px;
+            margin-top: -40px;
+            border-radius: 3px;
+            line-height: 80px;
+            text-align: center;
+            cursor: pointer;
+            background-color: #666;
+            color: #fff;
+            opacity: .5;
+            transition: all .6s;
+            font-size: 30px
+        }
+
+        .hi-slide .hi-next:hover,
+        .hi-slide .hi-prev:hover {
+            opacity: 1;
+            background-color: #444
+        }
+
+        .hi-slide .hi-prev {
+            left: -60px
+        }
+
+        .hi-slide .hi-prev::before {
+            content: '<'
+        }
+
+        .hi-slide .hi-next {
+            right: -60px
+        }
+
+        .hi-slide .hi-next::before {
+            content: '>'
+        }
+
+        .hi-slide>ul {
+            list-style: none;
+            position: relative;
+            width: 754px;
+            height: 292px;
+            margin: 0;
+            padding: 0
+        }
+
+        .hi-slide>ul>li {
+            overflow: hidden;
+            position: absolute;
+            z-index: 0;
+            left: 377px;
+            top: 0px;
+            width: 0;
+            height: 0;
+            margin: 0;
+            padding: 0;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            background-color: #333;
+            cursor: pointer
+        }
+
+        .hi-slide>ul>li>img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header------------------------>
+    <nav>
+        <div class="logo">Brian Hou</div>
+        <a id="top"></a>
+        <div class="nav-items">
+            <ul style="list-style: none">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!--title------------------>
+
+        <section>
+            <h1>Robotics</h1>
+        </section>
+
+        <br>
+
+        <!--Introduction---------------------------->
+        <section class="intro">
+            <p>
+                <i>Creativity drives my purpose. Robotics ignites my passion.</i>
+            </p>
+        </section>
+
+        <br>
+        <section class="about">
+            <h2>Journey of Robotic Discovery: Igniting Passion and Curiosity</h2>
+            <br>
+            <p>
+                When I was 5 years old, my parents made a significant decision that would shape my future. They enrolled me in Lego Mindstorms ev3 lessons, and little did I know that it would be the beginning of a thrilling journey. As I embarked on this new adventure, I discovered a world of creativity and innovation. Building and programming robots became my passion, allowing me to explore the realms of engineering and technology at a tender age. With each passing day, my skills and understanding of robotics grew, and I found myself eagerly anticipating each lesson. This early exposure to robotics ignited a spark within me, fueling a deep fascination and curiosity for the endless possibilities that lay ahead.
+            </p>
+        </section>
+
+        <br>
+
+        <!--robot image rotating system------------------------>
+        <section>
+            <div class="slide hi-slide">
+                <div class="hi-prev">
+
+                </div>
+                <div class="hi-next">
+
+                </div>
+                <ul style="list-style: none">
+                    <li><img src="../images/vex/pyro_cata.jpg"></li>
+                    <li><img src="../images/vex/RECF - AB.jpg"></li>
+                    <li><img src="../images/vex/rhino_side.jpg"></li>
+                    <li><img src="../images/vex/rhino.jpg"></li>
+                    <li><img src="../images/vex/RECF - blasting.jpg"></li>
+                    <li><img src="../images/vex/rhino_field.jpg"></li>
+                    <li><img src="../images/vex/rhino_goal.jpg"></li>
+                </ul>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+            </script>
+
+            <script src="../js/jquery.hislide.js"></script>
+
+            <script>$('.slide').hiSlide();</script>
+
+        </section>
+
+        <br>
+        <br>
+
+        <!--Vex Stuff--------------->
+        <section class="about">
+            <h2>VexU - PYRO's revival: <i>Air Blast</i></h2>
+            <br>
+            <p>
+                In 2022, my journey with VexU began as I gained acceptance into Arizona State University (ASU). While
+                reminiscing about the past, I discovered that the once illustrious team, PYRO, had faced setbacks during
+                the tumultuous times of the COVID-19 pandemic. With a deep-rooted desire to reignite the team's former
+                glory and achieve the coveted title of Vex world champion, I eagerly joined their ranks.
+            </p>
+            <p>
+                The season of "Spin Up" in 2022-2023 became an opportunity for me to breathe life back into PYRO and
+                make our mark on the Vex landscape once again. Through relentless dedication and innovation, I
+                meticulously crafted a one-of-a-kind robot known as the Air Blast. This creation garnered unwavering
+                admiration from the judges at the tournament, leaving them in awe of its ingenuity. In fact, the
+                esteemed head of the game development committee even declared it his "favorite robot of all time."
+            </p>
+            <p>
+                The ripple effect of Air Blast's success spread far and wide, resonating with teams across the globe.
+                The resoundingly positive feedback received from these teams, including high school students who shared
+                a passion for Vex, was truly inspiring. Remarkably, the impact was so profound that some aspiring
+                individuals expressed their desire to join ASU solely based on the extraordinary robot I had designed
+                and built.
+            </p>
+            <p>
+                To further validate the greatness of Air Blast, it proudly clinched the prestigious Build Award, the
+                highest honor bestowed upon a meticulously crafted robot, at the world championship event. This accolade
+                served as a testament to the vision and craftsmanship that breathed life into Air Blast, solidifying its
+                place in Vex history.
+            </p>
+            <p>
+                With one purpose accomplished and the team's resurgence well underway, I am more determined than ever to
+                strive toward the ultimate goal of claiming the title of Vex world champion. This remarkable journey has
+                not only reaffirmed my commitment to PYRO but also ignited a passion within others, leaving an indelible
+                impact on the Vex community as a whole.
+            </p>
+            <div class="wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YH-zxVsup3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p>Video of "Air Blast" on<a href="https://youtu.be/YH-zxVsup3Y" target="_blank"><u>YouTube</a></u></p>
+        </section>
+
+        <br>
+        <br>
+        <br>
+
+        <section class="about">
+            <h2>Vex VRC - Ignite: Pioneering the Path of Robotics Excellence</h2>
+            <br>
+            <p>
+                Vex robotics has been an integral part of my life since my sophomore year of high school, marking a serendipitous encounter during my transition from Fuhsing Private School (FHJH) to Kang Chiao International School (KCIS). FHJH served as the gateway that initially introduced me to the captivating realm of competitive robotics.
+            </p>
+            <p>
+                My journey began with two immersive years in the FIRST Robotics Competition (FRC) during my middle school days, although I must admit that the intricacies of FRC posed a significant challenge at the time. Nonetheless, it was through my involvement in FRC that I first discovered the closely intertwined world of Vex robotics. However, to my chagrin, I soon realized that KCIS exclusively offered Vex to junior and senior students.
+            </p>
+            <p>
+                Determined not to let timing hinder my passion, I embarked on a mission to establish a robotics program at KCIS, designed specifically for freshmen. Recognizing that it would be a missed opportunity to wait until my last two years of high school, I endeavored to create a pathway for students to delve into the wonders of robotics right from the outset of their freshman year.
+            </p>
+            <p>
+                However, embarking on a new program holds little meaning unless accompanied by compelling results. In a remarkable display of skill and determination, our nascent team triumphed at our inaugural competition, seizing the coveted Amaze Award—an accolade bestowed upon teams that exhibit extraordinary performance, versatility, and overall excellence. This momentous achievement marked a historic milestone for KCIS, as no team had ever secured any recognition before.
+            </p>
+            <p>
+                The momentum of our success continued to surge throughout the season, propelling us to claim the title of national champions. This resounding victory also earned KCIS its first-ever qualification for the World Championship, solidifying our team's position as trailblazers within our school's proud history. To this day, our record remains unbroken.
+            </p>
+            <p>
+                By etching our names into the illustrious history of KCIS, our accomplishments not only left an indelible mark but also ignited a spark of inspiration within future generations of robotics enthusiasts, compelling them to strive for greatness. Embracing the responsibility to foster the ongoing success of our school, I took the initiative to establish a Discord server—an interactive platform designed to facilitate communication and knowledge sharing among incoming students with a passion for robotics. This virtual space serves as a haven where inquisitive minds can seek guidance, pose questions, and engage in meaningful discussions with experienced competitors from previous years.
+            </p>
+            <p>
+                The impact of this Discord server has surpassed all expectations, paving the way for the emergence of a new wave of accomplished KCIS Robotics participants. As these aspiring individuals leverage the collective wisdom and experience available to them, they embark on their own remarkable journeys, achieving commendable success and upholding the proud legacy of our school's robotics program.
+            </p>
+
+        </section>
+
+        <br>
+        <br>
+        <p><a href="https://drive.google.com/drive/folders/17Q6L6M6XH6WwKU2s99hC6a-ZZgVpfN96?usp=sharing" target="_blank"><u>Link</u></a>to all the epic photos along the journey</p>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+
+        <!--Contributions & Accomplishments-------------------->
+        <section class="pageEnd">
+            <h2>Positions</h2>
+            <br>
+            <ul style="list-style: none">
+                <li><b>22-24 Rossum Rumblers Robotics: PYRO</b></li>
+                <li>Head of Engineer, Designer, Video Editor</li>
+                <li><b>20-22 KCIS Robotics A</b></li>
+                <li>Captain, Head of Engineer, Designer, Strategist</li>
+                <li><b>19-20 KCIS Robotics D</b></li>
+                <li>Founder, Captain, Head of Engineer, Designer</li>
+            </ul>
+
+            <br>
+            <br>
+
+            <h2>Accomplishments</h2>
+            <br>
+            <ul style="list-style:none">
+                <li><b>22-23 VexU Spin Up </b><i>Rossum Rumblers Robotics: PYRO</i></li>
+                <li><u>World Championship Qualification</u></li>
+                <li><u>Interviewed On The Main Stage</u></li>
+                <li><u>Most Talked About Team In The World</u></li>
+                <li>2023 VEX Robotics World Championship: Build Award</li>
+                <li>2022-2023 Autodesk CAD Challange: Winner</li>
+                <li>2023 Tumble In The Southwest: <u>4-2-0</u> Design Award</li>
+            </ul>
+
+            <br>
+
+            <ul style="list-style:none">
+                <li><b>21-22 Vex VRC Tipping Point </b> <i>KCIS Robotics A: Flappy Pigs</i></li>
+                <li><u>Taiwan National Finalists</u></li>
+                <li>2021-2022 Taiwan Open A: <u>5-0-0</u> Tournament Finalist, 2nd Overall</li>
+                <li>2021-2022 Taiwan Open Z: <u>1-2-0</u>Tournament Semifinalist, 3rd
+                    Overall</li>
+                <li>2021-2022 Taiwan Open Skills: Robot Skills 3rd Place</li>
+            </ul>
+
+            <br>
+
+            <ul style="list-style:none">
+                <li><b>20-21 Vex VRC Change Up </b><i>KCIS Robotics A: Flappy Pigs</i></li>
+                <li><u>World Championship Qualification</u></li>
+                <li><u>Taiwan National Champions</u></li>
+                <li>2021 VEX Robotics World Championship – High School Division (LRT): <u>5-2-0</u> 5th Overall, Judges'
+                    Award Runner-Up</li>
+                <li>2020-2021 VEX V5 Taiwan Signature Event: <u>7-0-0</u> Tournament Champion, Sportsmanship Award, 2nd
+                    Overall</li>
+                <li>Formosa VEX Change Up 2020: <u>5-1-1</u> Amaze Award, 2nd Overall</li>
+            </ul>
+
+            <br>
+
+            <ul style="list-style:none">
+                <li><b>19-20 Vex VRC Tower Takeover </b><i>KCIS Robotics D: Titanium Unicorns</i></li>
+                <li>TIRT/APRA VEX Tower Takeover Tournament: <u>7-3-0</u> Tournament Finalist, 2nd Overall, Robot Skills
+                    2nd Place</li>
+            </ul>
+        </section>
+    </main>
+
+    <!--footer----------------------->
+    <br>
+    <hr>
+    <footer>
+        <div class="foot">
+            <a href="https://instagram.com/bhou641" target="_blank">
+                <img src="../icons/insta.png" alt="Image" height=20 width=20></a>
+            <a href="https://instagram.com/hou_photos" target="_blank">
+                <img src="../icons/camera.png" alt="Image" height=20 width=20></a>
+            <a href="https://www.linkedin.com/in/brianhou818/" target="_blank">
+                <img src="../icons/linkedin.png" alt="Image" height=20 width=20></a>
+            <a href="mailto:brianhou818@gmail.com" target="_blank">
+                <img src="../icons/mail.png" alt="Image" height=20 width=20></a>
+        </div>
+    </footer>
+
+    <section class="topBtn">
+        <a href="#top">Back to top</a>
+    </section>
+
+</body>
+
+</html>
