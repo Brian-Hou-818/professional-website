@@ -56,7 +56,7 @@ a{
     padding: 0 0rem;
 }
 
-nav a:hover {
+nav li:hover {
     color: #323232;
 }
 
