@@ -56,6 +56,10 @@ a{
     padding: 0 0rem;
 }
 
+.topBtn{
+    text-align: center;
+}
+
 nav a:hover {
     color: #323232;
 }
@@ -224,7 +228,7 @@ h3{
     margin:auto;
     text-align: center;
     font-size: 2rem;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 2.5rem;
     color: #c8d5dd;
     margin-bottom: 130px;
@@ -247,14 +251,14 @@ p{
     margin:auto;
     text-align: center;
     font-size: 1rem;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 li{
     margin:auto;
     text-align: center;
     font-size: 1rem;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 b{
