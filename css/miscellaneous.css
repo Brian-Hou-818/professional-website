@@ -234,7 +234,23 @@ footer {
     }
 }
 
-@media(max-width: 1200px){
+@media only screen and(max-width: 1200px){
+    .grid-container-1{
+        grid-template-columns: 1fr;
+        max-width: fit-content;
+    }
+    .grid-container-2{
+        grid-template-columns: 1fr;
+        max-width: fit-content;
+    }
+    .grid-container-3{
+        grid-template-columns: 1fr;
+        max-width: fit-content;
+    }
+    .grid-container-4{
+        grid-template-columns: 1fr;
+        max-width: fit-content;
+    }
     .item img{
         object-fit: cover;
         width: 100%;
