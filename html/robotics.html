@@ -4,86 +4,6 @@
 <head>
     <title>Robotics - Brian Hou</title>
     <link rel="stylesheet" href="../css/robotics.css">
-
-    <!--first image rotating class-------------->
-    <style>
-        .hi-slide {
-            position: relative;
-            width: 754px;
-            height: 300px;
-            margin: 50px auto 0;
-        }
-
-        .hi-slide .hi-next,
-        .hi-slide .hi-prev {
-            position: absolute;
-            top: 50%;
-            width: 40px;
-            height: 80px;
-            margin-top: -40px;
-            border-radius: 3px;
-            line-height: 80px;
-            text-align: center;
-            cursor: pointer;
-            background-color: #666;
-            color: #fff;
-            opacity: .5;
-            transition: all .6s;
-            font-size: 30px
-        }
-
-        .hi-slide .hi-next:hover,
-        .hi-slide .hi-prev:hover {
-            opacity: 1;
-            background-color: #444
-        }
-
-        .hi-slide .hi-prev {
-            left: -60px
-        }
-
-        .hi-slide .hi-prev::before {
-            content: '<'
-        }
-
-        .hi-slide .hi-next {
-            right: -60px
-        }
-
-        .hi-slide .hi-next::before {
-            content: '>'
-        }
-
-        .hi-slide>ul {
-            list-style: none;
-            position: relative;
-            width: 754px;
-            height: 292px;
-            margin: 0;
-            padding: 0
-        }
-
-        .hi-slide>ul>li {
-            overflow: hidden;
-            position: absolute;
-            z-index: 0;
-            left: 377px;
-            top: 0px;
-            width: 0;
-            height: 0;
-            margin: 0;
-            padding: 0;
-            border: 2px solid #fff;
-            border-radius: 5px;
-            background-color: #333;
-            cursor: pointer
-        }
-
-        .hi-slide>ul>li>img {
-            width: 100%;
-            height: 100%;
-        }
-    </style>
 </head>
 
 <body>
@@ -121,13 +41,44 @@
             <h2>Journey of Robotic Discovery: Igniting Passion and Curiosity</h2>
             <br>
             <p>
-                When I was 5 years old, my parents made a significant decision that would shape my future. They enrolled me in Lego Mindstorms ev3 lessons, and little did I know that it would be the beginning of a thrilling journey. As I embarked on this new adventure, I discovered a world of creativity and innovation. Building and programming robots became my passion, allowing me to explore the realms of engineering and technology at a tender age. With each passing day, my skills and understanding of robotics grew, and I found myself eagerly anticipating each lesson. This early exposure to robotics ignited a spark within me, fueling a deep fascination and curiosity for the endless possibilities that lay ahead.
+                When I was 5 years old, my parents made a significant decision that would shape my future. They enrolled
+                me in Lego Mindstorms ev3 lessons, and little did I know that it would be the beginning of a thrilling
+                journey. As I embarked on this new adventure, I discovered a world of creativity and innovation.
+                Building and programming robots became my passion, allowing me to explore the realms of engineering and
+                technology at a tender age. With each passing day, my skills and understanding of robotics grew, and I
+                found myself eagerly anticipating each lesson. This early exposure to robotics ignited a spark within
+                me, fueling a deep fascination and curiosity for the endless possibilities that lay ahead.
             </p>
         </section>
 
         <br>
 
-        <!--robot image rotating system------------------------>
+        <section class="container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide-1" src="../images/vex/RECF - AB.jpg"
+                        alt="PYRO Robotics Air Blast bot on field, shot by RECF">
+                    <img id="slide-2" src="../images/vex/RECF - blasting.jpg"
+                        alt="PYRO Robotics Air Blast bot blasting on field, shot by RECF">
+                    <img id="slide-3" src="../images/vex/rhino_side.jpg" alt="KCIS Robotics 'Rhino' bot side view">
+                    <img id="slide-4" src="../images/vex/rhino.jpg" alt="KCIS Robotics 'rhino' bot extended view">
+                    <img id="slide-5" src="../images/vex/rhino_field.jpg" alt="KCIS Robotics 'rhino' bot on field">
+                    <img id="slide-6" src="../images/vex/rhino_goal.jpg"
+                        alt="KCIS Robotics 'rhino' bot balancing goal on platform">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+                    <a href="#slide-5"></a>
+                    <a href="#slide-6"></a>
+                </div>
+            </div>
+        </section>
+
+        <!--
+        <--robot image rotating system---------------------
         <section>
             <div class="slide hi-slide">
                 <div class="hi-prev">
@@ -155,6 +106,7 @@
             <script>$('.slide').hiSlide();</script>
 
         </section>
+    -->
 
         <br>
         <br>
@@ -196,7 +148,10 @@
                 impact on the Vex community as a whole.
             </p>
             <div class="wrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YH-zxVsup3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YH-zxVsup3Y"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
             <p>Video of "Air Blast" on<a href="https://youtu.be/YH-zxVsup3Y" target="_blank"><u>YouTube</a></u></p>
         </section>
@@ -209,32 +164,61 @@
             <h2>Vex VRC - Ignite: Pioneering the Path of Robotics Excellence</h2>
             <br>
             <p>
-                Vex robotics has been an integral part of my life since my sophomore year of high school, marking a serendipitous encounter during my transition from Fuhsing Private School (FHJH) to Kang Chiao International School (KCIS). FHJH served as the gateway that initially introduced me to the captivating realm of competitive robotics.
+                Vex robotics has been an integral part of my life since my sophomore year of high school, marking a
+                serendipitous encounter during my transition from Fuhsing Private School (FHJH) to Kang Chiao
+                International School (KCIS). FHJH served as the gateway that initially introduced me to the captivating
+                realm of competitive robotics.
             </p>
             <p>
-                My journey began with two immersive years in the FIRST Robotics Competition (FRC) during my middle school days, although I must admit that the intricacies of FRC posed a significant challenge at the time. Nonetheless, it was through my involvement in FRC that I first discovered the closely intertwined world of Vex robotics. However, to my chagrin, I soon realized that KCIS exclusively offered Vex to junior and senior students.
+                My journey began with two immersive years in the FIRST Robotics Competition (FRC) during my middle
+                school days, although I must admit that the intricacies of FRC posed a significant challenge at the
+                time. Nonetheless, it was through my involvement in FRC that I first discovered the closely intertwined
+                world of Vex robotics. However, to my chagrin, I soon realized that KCIS exclusively offered Vex to
+                junior and senior students.
             </p>
             <p>
-                Determined not to let timing hinder my passion, I embarked on a mission to establish a robotics program at KCIS, designed specifically for freshmen. Recognizing that it would be a missed opportunity to wait until my last two years of high school, I endeavored to create a pathway for students to delve into the wonders of robotics right from the outset of their freshman year.
+                Determined not to let timing hinder my passion, I embarked on a mission to establish a robotics program
+                at KCIS, designed specifically for freshmen. Recognizing that it would be a missed opportunity to wait
+                until my last two years of high school, I endeavored to create a pathway for students to delve into the
+                wonders of robotics right from the outset of their freshman year.
             </p>
             <p>
-                However, embarking on a new program holds little meaning unless accompanied by compelling results. In a remarkable display of skill and determination, our nascent team triumphed at our inaugural competition, seizing the coveted Amaze Award—an accolade bestowed upon teams that exhibit extraordinary performance, versatility, and overall excellence. This momentous achievement marked a historic milestone for KCIS, as no team had ever secured any recognition before.
+                However, embarking on a new program holds little meaning unless accompanied by compelling results. In a
+                remarkable display of skill and determination, our nascent team triumphed at our inaugural competition,
+                seizing the coveted Amaze Award—an accolade bestowed upon teams that exhibit extraordinary performance,
+                versatility, and overall excellence. This momentous achievement marked a historic milestone for KCIS, as
+                no team had ever secured any recognition before.
             </p>
             <p>
-                The momentum of our success continued to surge throughout the season, propelling us to claim the title of national champions. This resounding victory also earned KCIS its first-ever qualification for the World Championship, solidifying our team's position as trailblazers within our school's proud history. To this day, our record remains unbroken.
+                The momentum of our success continued to surge throughout the season, propelling us to claim the title
+                of national champions. This resounding victory also earned KCIS its first-ever qualification for the
+                World Championship, solidifying our team's position as trailblazers within our school's proud history.
+                To this day, our record remains unbroken.
             </p>
             <p>
-                By etching our names into the illustrious history of KCIS, our accomplishments not only left an indelible mark but also ignited a spark of inspiration within future generations of robotics enthusiasts, compelling them to strive for greatness. Embracing the responsibility to foster the ongoing success of our school, I took the initiative to establish a Discord server—an interactive platform designed to facilitate communication and knowledge sharing among incoming students with a passion for robotics. This virtual space serves as a haven where inquisitive minds can seek guidance, pose questions, and engage in meaningful discussions with experienced competitors from previous years.
+                By etching our names into the illustrious history of KCIS, our accomplishments not only left an
+                indelible mark but also ignited a spark of inspiration within future generations of robotics
+                enthusiasts, compelling them to strive for greatness. Embracing the responsibility to foster the ongoing
+                success of our school, I took the initiative to establish a Discord server—an interactive platform
+                designed to facilitate communication and knowledge sharing among incoming students with a passion for
+                robotics. This virtual space serves as a haven where inquisitive minds can seek guidance, pose
+                questions, and engage in meaningful discussions with experienced competitors from previous years.
             </p>
             <p>
-                The impact of this Discord server has surpassed all expectations, paving the way for the emergence of a new wave of accomplished KCIS Robotics participants. As these aspiring individuals leverage the collective wisdom and experience available to them, they embark on their own remarkable journeys, achieving commendable success and upholding the proud legacy of our school's robotics program.
+                The impact of this Discord server has surpassed all expectations, paving the way for the emergence of a
+                new wave of accomplished KCIS Robotics participants. As these aspiring individuals leverage the
+                collective wisdom and experience available to them, they embark on their own remarkable journeys,
+                achieving commendable success and upholding the proud legacy of our school's robotics program.
             </p>
 
         </section>
 
         <br>
         <br>
-        <p><a href="https://drive.google.com/drive/folders/17Q6L6M6XH6WwKU2s99hC6a-ZZgVpfN96?usp=sharing" target="_blank"><u>Link</u></a>to all the epic photos along the journey</p>
+
+        <p>*IMAGES ARE RESIZED TO OPTIMIZE LOADING EFFICIENCY*</p>
+        <p><a href="https://drive.google.com/drive/folders/17Q6L6M6XH6WwKU2s99hC6a-ZZgVpfN96?usp=sharing"
+                target="_blank"><u>Link</u></a>to all the epic photos along the journey</p>
         <br>
         <br>
         <hr>
