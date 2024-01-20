@@ -80,7 +80,7 @@ a{
     padding: 0 0rem;
 }
 
-nav a:hover {
+nav .nav-items a:hover {
     color: #323232;
 }
 
@@ -292,6 +292,10 @@ button:hover {
 
 button:active {
     transform: scale(1.01);
+}
+
+.topBtn{
+    text-align: center;
 }
 
 .column-right {
