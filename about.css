@@ -218,4 +218,5 @@ footer {
 .wrapper_L p{
     padding-left: 2rem;
     text-align: left;
+    max-width: 500px;
 }
