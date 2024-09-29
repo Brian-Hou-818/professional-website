@@ -208,15 +208,16 @@ footer {
 
 .wrapper_L{
     margin: 0 auto;
-    width: 40%;
     height: 100%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .wrapper_L p{
     padding-left: 2rem;
-    text-align: left;
+    padding-right: 2rem;
+    text-align: justify;
     max-width: 500px;
 }
